@@ -27,7 +27,7 @@ body{
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--brand)}
 .brand-text{font-weight:700;letter-spacing:0.2px}
 
-.main-nav{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:center}
+.main-nav{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:center}
 .main-nav a{color:var(--brand);text-decoration:none;padding:8px 4px}
 .main-nav a.cta{background:var(--brand);color:#fff;padding:8px 14px;border-radius:6px;font-weight:600}
 
@@ -83,9 +83,10 @@ body{
 }
 
 @media (max-width:699px) {
-  .header-inner{justify-content:center;}
-  .main-nav{justify-content:center;}
-  .theme-toggle{width:100%;max-width:240px;}
+  .header-inner{justify-content:center;align-items:stretch;}
+  .main-nav{justify-content:center;width:100%;}
+  .main-nav a{flex:1 1 auto;text-align:center;}
+  .theme-toggle{width:100%;max-width:250px;}
   .footer-inner{flex-direction:column;align-items:center;text-align:center;gap:10px;}
 }
 
