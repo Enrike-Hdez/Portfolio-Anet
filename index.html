@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contadora Económica — Nombre Apellido</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Inicio">
+        <span class="brand-text">Anet Mayo Beltrán</span>
+      </a>
+      <nav class="main-nav" aria-label="Menú principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#sobre">Sobre mí</a>
+        <a class="cta" href="#contacto">Contactar</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Alternar modo oscuro" type="button">Modo oscuro</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Contadora económica para empresas y particulares</h1>
+          <p class="lead">Asesoría fiscal, contable y financiera con enfoque práctico y confianza profesional. Rellena tus datos aquí.</p>
+          <p class="hero-actions">
+            <a href="#contacto" class="btn btn-primary">Solicitar Servicios</a>
+            <a href="#servicios" class="btn btn-outline">Ver Servicios</a>
+          </p>
+        </div>
+        <div class="hero-art">
+          <img src="assets/svg/hero-art.svg" alt="Ilustración" class="hero-art-img">
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="section">
+      <div class="container">
+        <h2 class="section-title">Servicios</h2>
+        <p class="section-intro">Ofrezco soluciones completas en contabilidad y gestión financiera.</p>
+        <div class="grid services-grid">
+          <article class="card">
+            <h3>Contabilidad y registro</h3>
+            <p>Registro contable, cierres y balances para empresas y autónomos.</p>
+          </article>
+          <article class="card">
+            <h3>Asesoría fiscal</h3>
+            <p>Planificación fiscal, cumplimiento tributario y presentación de impuestos.</p>
+          </article>
+          <article class="card">
+            <h3>Gestión financiera</h3>
+            <p>Análisis de costes, presupuestos y optimización de flujo de caja.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section alt">
+      <div class="container about-grid">
+        <div class="about-photo" aria-hidden="true">
+          <img src="assets/fotos/anetjpg.jpg" alt="Foto de Anet Mayo Beltrán" class="about-photo-img">
+        </div>
+        <div class="about-copy">
+          <h2>Sobre mí</h2>
+          <p>Soy contadora pública con experiencia en PYMEs y asesoría personalizada. Aquí puedes añadir tu formación, credenciales y enfoque profesional.</p>
+          <ul class="highlights">
+            <li>Asesoría personalizada</li>
+            <li>Confidencialidad y cumplimiento</li>
+            <li>Informes claros y accionables</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de testimonios eliminada por petición del cliente -->
+
+    <section id="contacto" class="section contact-section">
+      <div class="container contact-grid">
+        <div>
+          <h2>Contacto</h2>
+          <p class="muted">Rellena tus datos abajo o utiliza la información de contacto directa.</p>
+          <ul class="contact-list">
+            <li><strong>Teléfono:</strong> +53 5939 6629  </li>
+            <li><strong>Email:</strong> antimiela41@gmail.com</li>
+          </ul>
+        </div>
+        <form class="contact-form" action="mailto:antimiela41@gmail.com" method="post" enctype="text/plain">
+          <label>
+            Email
+            <input type="email" name="email" placeholder="tu@ejemplo.com" required>
+          </label>
+          <label>
+            Mensaje
+            <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+          </label>
+          <p class="muted small">Al enviar, se abrirá tu cliente de correo. El mensaje saldrá desde la cuenta configurada en dicho cliente; el campo Email se incluirá en el cuerpo para que pueda identificarse al remitente.</p>
+          <p><button type="submit" class="btn btn-primary">Enviar</button></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year">2026</span> Contadora Económica — Todos los derechos reservados.</p>
+      <nav class="footer-nav" aria-label="Enlaces secundarios">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="assets/js/theme-toggle.js"></script>
+</body>
+</html>
