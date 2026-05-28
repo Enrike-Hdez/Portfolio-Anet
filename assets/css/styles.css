@@ -23,22 +23,24 @@ body{
 .container{width:95%;max-width:var(--max-width);margin:0 auto}
 
 .site-header{background:rgba(255,255,255,0.85);backdrop-filter:blur(6px);border-bottom:1px solid rgba(11,42,74,0.06)}
-.header-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 0;flex-wrap:wrap;gap:16px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--brand)}
 .brand-text{font-weight:700;letter-spacing:0.2px}
 
-.main-nav a{margin-left:20px;color:var(--brand);text-decoration:none;padding:8px 4px}
+.main-nav{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:center}
+.main-nav a{color:var(--brand);text-decoration:none;padding:8px 4px}
 .main-nav a.cta{background:var(--brand);color:#fff;padding:8px 14px;border-radius:6px;font-weight:600}
 
 .hero{padding:48px 0}
 .hero-inner{display:grid;grid-template-columns:1fr;gap:32px;align-items:center}
 .hero-copy h1{font-size:clamp(1.6rem,2.6vw,2.6rem);margin:0 0 12px}
 .lead{color:var(--muted);margin:0 0 18px}
-.hero-actions .btn{margin-right:12px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero-actions .btn{margin:0}
 .btn{display:inline-block;text-decoration:none;border:1px solid transparent;padding:10px 16px;border-radius:8px;cursor:pointer;transition:transform .18s ease,background-color .18s ease,box-shadow .18s ease}
 .btn-primary{background:var(--brand);color:#fff}
 .btn-outline{background:transparent;border:1px solid rgba(11,42,74,0.08);color:var(--brand)}
-  .theme-toggle{background:transparent;color:var(--brand);border:1px solid rgba(11,42,74,0.12);padding:8px 14px;border-radius:8px;font-weight:600;transition:background-color .18s ease,color .18s ease,border-color .18s ease,transform .18s ease;margin-left:16px;white-space:nowrap}
+  .theme-toggle{background:transparent;color:var(--brand);border:1px solid rgba(11,42,74,0.12);padding:8px 14px;border-radius:8px;font-weight:600;transition:background-color .18s ease,color .18s ease,border-color .18s ease,transform .18s ease;white-space:nowrap}
   .theme-toggle:hover{background:rgba(11,42,74,0.06);transform:scale(1.02)}
 .btn:active{transform:scale(0.995);filter:brightness(0.98)}
 
@@ -78,6 +80,13 @@ body{
   .testimonials-grid{grid-template-columns:repeat(2,1fr)}
   .contact-grid{grid-template-columns:1fr 420px}
   .main-nav a{margin-left:24px}
+}
+
+@media (max-width:699px) {
+  .header-inner{justify-content:center;}
+  .main-nav{justify-content:center;}
+  .theme-toggle{width:100%;max-width:240px;}
+  .footer-inner{flex-direction:column;align-items:center;text-align:center;gap:10px;}
 }
 
 @media(min-width:1000px){
